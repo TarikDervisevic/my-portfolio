@@ -4,7 +4,7 @@ import classes from "./ToolbarBtns.module.css"
 import ToolbarBtn from "./ToolbarBtn/ToolbarBtn";
 
 const ToolbarBtns = (props) => {
-    const toolbarButtons = [ {name: "home", linkTo: "/"}, {name: "projects", linkTo: "/"}, {name: "contacts", linkTo: "/"} ]
+    const toolbarButtons = [ {name: "Home", linkTo: "/"}, {name: "Projects", linkTo: "/"}, {name: "Contact", linkTo: "/"} ]
 
     return (
             <div className={classes.ToolbarBtns}>
