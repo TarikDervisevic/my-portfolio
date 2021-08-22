@@ -4,10 +4,22 @@
     padding: 0;
     font-size: 1.1rem;
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(255, 255, 255);
     border: none;
     padding: 4px 0;
     font-weight: 400;
+}
+
+.ToolbarBtnWhite {
+    color: rgb(255, 255, 255);
+}
+
+.ToolbarBtnBlack {
+    color: #000000;
+}
+
+.ToolbarBtnActive {
+    border-bottom: 3px solid rgb(236, 46, 71);
+    margin-bottom: -3px;
 }
 
 .ToolbarBtn:hover {

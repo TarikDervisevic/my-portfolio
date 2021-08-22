@@ -1,8 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 import classes from "./Jumbotron.module.css"
 
 const Jumbotron = (props) => {
+    const dispatch = useDispatch();
 
     return (
             <div className={classes.Jumbotron}>
@@ -16,7 +19,20 @@ const Jumbotron = (props) => {
                 <div className={classes.SubText}>
                     I'm a new full-stack developer and I design, build and deploy online apps.
                 </div>
-                <button className={classes.ReadMore}>Read More</button>
+                <Link to="/about">
+                    <button 
+                        onClick={() => {
+                            dispatch({
+                                type: "setActiveToolbarBtn",
+                                payload: { 
+                                    activeToolbarBtn: props.name.toLowerCase()
+                                }
+                            })
+                        }}
+                        className={classes.ReadMore}>
+                        Read More
+                    </button>
+                </Link>
             </div>
     )
 }

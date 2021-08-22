@@ -1,0 +1,15 @@
+.AboutMe {
+    background-color: rgb(243, 243, 243);
+    backdrop-filter: blur(6px);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: 2px;
+}
+
+.AboutMeContent {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+}

@@ -1,14 +1,15 @@
 import React from "react";
 
 import classes from "./AboutMe.module.css"
+import AboutSideBar from "../../components/AboutMeComps/AboutSideBar/AboutSideBar";
+import Article from "../../components/AboutMeComps/Article/Article";
 
 const AboutMe = (props) => {
     return (
                 <div className={classes.AboutMe}>
-                    <h1 className={classes.AboutMeTitle}>About Me</h1>
                     <div className={classes.AboutMeContent}>
-                        <SideBar/>
-                        <AboutMeArticle/>
+                        <AboutSideBar/>
+                        <Article/>
                     </div>
                 </div>
     )

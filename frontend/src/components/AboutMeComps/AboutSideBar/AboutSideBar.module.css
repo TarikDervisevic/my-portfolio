@@ -1,0 +1,17 @@
+.AboutSideBar {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+}
+
+.Portrait {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 100%;
+}
+
+.SideBarBorder {
+    margin-top: 50px;
+    height: 100vh;
+    border-left: 1px solid #cccccc;
+}

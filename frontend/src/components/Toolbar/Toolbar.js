@@ -7,7 +7,7 @@ const Toolbar = (props) => {
 
     return (
             <header className={classes.Toolbar}>
-                <ToolbarBtns/>
+                <ToolbarBtns btnColor={props.btnColor}/>
             </header>
     )
 }
