@@ -11,3 +11,15 @@
     min-height: 100vh;
     margin: 0 auto;
 }
+
+.AboutMeTitle {
+    margin: 0 auto;
+    padding-top: 40px;
+    font-size: 1.6vw;
+    height: 3vw;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    color: rgb(185, 185, 185);
+    border-bottom: 1px solid #ccc;
+}

@@ -8,7 +8,7 @@ const ToolbarBtns = (props) => {
         {name: "Home", linkTo: "/"}, 
         {name: "About", linkTo: "/about"}, 
         {name: "Projects", linkTo: "/projects"}, 
-        {name: "Contact", linkTo: "/"} ]
+        {name: "Contact", linkTo: "/contact"} ]
 
     return (
             <div className={classes.ToolbarBtns}>

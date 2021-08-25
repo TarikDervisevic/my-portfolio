@@ -7,6 +7,7 @@ import Article from "../../components/AboutMeComps/Article/Article";
 const AboutMe = (props) => {
     return (
                 <div className={classes.AboutMe}>
+                    <div className={classes.AboutMeTitle}>ABOUT ME</div>
                     <div className={classes.AboutMeContent}>
                         <AboutSideBar/>
                         <Article/>

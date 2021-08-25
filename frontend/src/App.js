@@ -6,6 +6,7 @@ import Toolbar from "./components/Toolbar/Toolbar";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
+import ContactPage from "./pages/ContactPage/ContactPage";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
           <Route path="/projects">
             <Toolbar btnColor="black"/>
             <ProjectPage/>
+          </Route>
+          <Route path="/contact">
+            <Toolbar btnColor="black"/>
+            <ContactPage/>
           </Route>
           <Route path="/">
             <HomePage/>
