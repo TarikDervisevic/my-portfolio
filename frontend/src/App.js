@@ -5,6 +5,7 @@ import classes from "./App.module.css";
 import Toolbar from "./components/Toolbar/Toolbar";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutMe from "./pages/AboutMe/AboutMe";
+import ProjectPage from "./pages/ProjectPage/ProjectPage";
 
 function App() {
   return (
@@ -14,6 +15,10 @@ function App() {
           <Route path="/about">
             <Toolbar btnColor="black"/>
             <AboutMe/>
+          </Route>
+          <Route path="/projects">
+            <Toolbar btnColor="black"/>
+            <ProjectPage/>
           </Route>
           <Route path="/">
             <HomePage/>

@@ -1,7 +1,5 @@
 .AboutMe {
     background-color: rgb(243, 243, 243);
-    backdrop-filter: blur(6px);
-    background-size: cover;
     min-height: 100vh;
     margin-top: 2px;
 }

@@ -25,7 +25,7 @@ const Jumbotron = (props) => {
                             dispatch({
                                 type: "setActiveToolbarBtn",
                                 payload: { 
-                                    activeToolbarBtn: props.name.toLowerCase()
+                                    activeToolbarBtn: "about"
                                 }
                             })
                         }}
