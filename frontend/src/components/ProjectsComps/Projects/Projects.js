@@ -5,13 +5,13 @@ import Project from "./Project/Project";
 
 const Projects = (props) => {
     const projectList = [
-        {name: "PixelStore"},
-        {name: "SquareClicker"}
+        {name: "PixelStore", desc: "An online store made with the MERN stack", link: "https://salty-eyrie-09068.herokuapp.com", imgURL: "https://i.imgur.com/TW7A8T2.png"},
+        {name: "SquareClicker", desc: "My first React project, a simple game", link: "https://squareclicker.web.app", imgURL: "https://i.imgur.com/1Ggwv5C.png"}
     ]
 
     return (
                 <div className={classes.Projects}>
-                    {projectList.map(project => <Project name={project.name}/>)}
+                    {projectList.map(project => <Project name={project.name} desc={project.desc} link={project.link} imgURL={project.imgURL}/>)}
                 </div>
     )
 }
