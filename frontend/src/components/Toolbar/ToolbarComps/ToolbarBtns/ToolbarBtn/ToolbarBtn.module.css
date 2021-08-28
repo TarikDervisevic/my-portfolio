@@ -1,5 +1,4 @@
 .ToolbarBtn {
-    height: 80px;
     width: 110px;
     padding: 0;
     font-size: 1.1rem;
@@ -9,6 +8,13 @@
     font-weight: 400;
 }
 
+.ToolbarBtnLarge {
+    height: 80px;
+}
+
+.ToolbarBtnSmall {
+    height: 50px;
+}
 
 .ToolbarBtnWhite {
     color: rgb(255, 255, 255);

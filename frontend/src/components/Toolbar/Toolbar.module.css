@@ -1,5 +1,4 @@
 .Toolbar {
-    height: 80px;
     width: 100%;
     top: 0;
     left: 0;
@@ -10,4 +9,16 @@
     padding: 0 20px;
     box-sizing: border-box;
     z-index: 10000;
+}
+
+.ToolbarLarge {
+    height: 80px;
+}
+
+.ToolbarSmall {
+    height: 50px;
+}
+
+.ToolbarExtraSmall {
+    height: 40px;
 }

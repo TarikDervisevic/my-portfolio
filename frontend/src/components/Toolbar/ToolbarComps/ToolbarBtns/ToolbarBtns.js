@@ -1,9 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 import classes from "./ToolbarBtns.module.css"
 import ToolbarBtn from "./ToolbarBtn/ToolbarBtn";
 
 const ToolbarBtns = (props) => {
+    const screenSize = useSelector(state => state.screenSize);
+
     const toolbarButtons = [ 
         {name: "Home", linkTo: "/"}, 
         {name: "About", linkTo: "/about"}, 
@@ -11,7 +14,10 @@ const ToolbarBtns = (props) => {
         {name: "Contact", linkTo: "/contact"} ]
 
     return (
-            <div className={classes.ToolbarBtns}>
+            <div className={
+                `${screenSize === "large" ? 
+                classes.ToolbarBtnsLarge : screenSize === "small" ? 
+                classes.ToolbarBtnsSmall : classes.ToolbarBtnsExtraSmall}`}>
                 {toolbarButtons.map(button => {
                     return <ToolbarBtn name={button.name} linkTo={button.linkTo} btnColor={props.btnColor}/>
                 })}

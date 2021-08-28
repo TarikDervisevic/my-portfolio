@@ -7,9 +7,13 @@ import classes from "./ToolbarBtn.module.css"
 const ToolbarBtn = (props) => {
     const dispatch = useDispatch();
     const activeToolbarBtn = useSelector(state => state.activeToolbarBtn);
+    const screenSize = useSelector(state => state.screenSize);
 
     const setBtnClasses = () => {
-        let classString = `${classes.ToolbarBtn}`;
+        let classString = `${classes.ToolbarBtn} ${screenSize === "large" ? 
+        classes.ToolbarBtnLarge : screenSize === "small" ? 
+        classes.ToolbarBtnSmall : classes.ToolbarBtnExtraSmall}`;
+
         if (props.btnColor === "white") {
             classString = classString.concat(` ${classes.ToolbarBtnWhite}`)
         } else if (props.btnColor === "black") {
@@ -18,6 +22,7 @@ const ToolbarBtn = (props) => {
         if (activeToolbarBtn === props.name.toLowerCase()) {
             classString = classString.concat(` ${classes.ToolbarBtnActive}`)
         }
+        
         return classString;
     }
 
