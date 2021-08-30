@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import classes from './SideDrawer.module.css';
-import Backdrop from '../../UI/Backdrop/Backdrop';
+import Backdrop from "./Backdrop/Backdrop";
 import DrawerItem from "./DrawerItem/DrawerItem";
 import { useSelector, useDispatch } from 'react-redux';
 
 const SideDrawer = ( props ) => {
     const dispatch = useDispatch();
+    const showSideDrawer = useSelector(state => state.showBackdrop)
 
     const [categories, setCategories] = useState(null);
-    const [showSideDrawer, setShowSideDrawer] = useState(false);
+    const [attachedClasses, setAttachedClasses] = useState([classes.SideDrawer, classes.Close])
 
     const setShowBackdrop = () => {
         dispatch({
@@ -20,22 +21,19 @@ const SideDrawer = ( props ) => {
         })
     }
 
-    const sideDrawerClosedHandler = () => {
-        setShowSideDrawer(false)
-    }
-
-    const sideDrawerToggleHandler = () => {
-        setShowSideDrawer((prevState) => !prevState.showSideDrawer)
-    }
-
-    let attachedClasses = [classes.SideDrawer, classes.Close];
-    if (showSideDrawer) {
-        attachedClasses = [classes.SideDrawer, classes.Open];
-    }
+    useEffect(() => {
+        if (!showSideDrawer) {
+            setAttachedClasses([classes.SideDrawer, classes.Close]);
+        }
+        if (showSideDrawer) {
+            setAttachedClasses([classes.SideDrawer, classes.Open]);
+        }
+    }, [showSideDrawer])
+    
     return (
         <React.Fragment>
             <Backdrop/>
-            <div className={attachedClasses.join(' ')} onClick={sideDrawerClosedHandler}>
+            <div className={attachedClasses.join(' ')} onClick={setShowBackdrop}>
                 <nav>
                     <DrawerItem name="Home" linkpath="/home"/>
                     <DrawerItem name="About" linkpath="/about"/> 

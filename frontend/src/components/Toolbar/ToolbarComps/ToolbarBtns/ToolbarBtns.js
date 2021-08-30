@@ -15,7 +15,7 @@ const ToolbarBtns = (props) => {
 
     return (
             <div className={
-                `${screenSize === "large" ? 
+                `${screenSize === "large" || screenSize === "medium" ? 
                 classes.ToolbarBtnsLarge : screenSize === "small" ? 
                 classes.ToolbarBtnsSmall : classes.ToolbarBtnsExtraSmall}`}>
                 {toolbarButtons.map(button => {

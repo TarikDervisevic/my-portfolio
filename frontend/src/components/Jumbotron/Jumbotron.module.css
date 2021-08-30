@@ -1,12 +1,12 @@
 .Jumbotron {
     height: 40%;
-    width: 60%;
+    width: 80%;
     color: white;
-    font-size: 4vw;
+    
     font-weight: 500;
     text-shadow: 8px 8px 8px #000000;
     margin-top: 8vw;
-    margin-left: 14vw;
+    
 
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -18,17 +18,53 @@
     cursor: default;
 }
 
+.JumbotronLarge {
+    font-size: 4vw;
+    margin-left: 14vw;
+}
+
+.JumbotronMedium {
+    font-size: 6vw;
+    margin-left: 14vw;
+    margin-top: 14vh;
+}
+
+.JumbotronSmall {
+    font-size: 8vw;
+    text-align: center;
+    margin: 20vh auto;
+}
+
+.JumbotronExtraSmall {
+    font-size: 11vw;
+    text-align: center;
+    margin: 20vh auto;
+}
+
 .SubText {
     margin-top: 20px;
+}
+
+.SubTextLarge {
     font-size: 1.5vw;
 }
 
+.SubTextMedium {
+    font-size: 2.2vw;
+}
+
+.SubTextSmall {
+    font-size: 2.5vw;
+}
+
+.SubTextExtraSmall {
+    font-size: 4.5vw;
+}
+
 .ReadMore {
-    height: 2vw;
-    width: 7vw;
     border: none;
     cursor: pointer;
-    font-size: 0.9vw;
+    
     background-color: rgb(236, 46, 71);
     color: white;
 
@@ -36,6 +72,31 @@
     -o-transition: background-color .15s ease-in;
     -webkit-transition: background-color .15s ease-in;
     transition: background-color .15s ease-in;
+}
+
+.ReadMoreLarge {
+    height: 2vw;
+    width: 7vw;
+    font-size: 0.9vw;
+}
+
+.ReadMoreMedium {
+    height: 3.5vw;
+    width: 12vw;
+    font-size: 1.7vw;
+}
+
+.ReadMoreSmall {
+    height: 6vw;
+    width: 18vw;
+    font-size: 2.5vw;
+}
+
+.ReadMoreExtraSmall {
+    margin-top: 30px;
+    height: 10vw;
+    width: 28vw;
+    font-size: 4vw;
 }
 
 .ReadMore:hover {

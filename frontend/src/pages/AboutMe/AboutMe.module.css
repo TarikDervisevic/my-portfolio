@@ -5,21 +5,58 @@
 }
 
 .AboutMeContent {
-    display: grid;
-    grid-template-columns: 2fr 5fr;
     max-width: 1200px;
     min-height: 100vh;
     margin: 0 auto;
 }
 
+.AboutMeContentLarge {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
+.AboutMeContentMedium {
+   display: grid; 
+   grid-template-columns: 2fr 5fr;
+}
+
+.AboutMeContentSmall {
+    display: grid; 
+    grid-template-rows: 240px auto;
+}
+
+.AboutMeContentExtraSmall {
+    
+}
+
 .AboutMeTitle {
     margin: 0 auto;
     padding-top: 40px;
-    font-size: 1.6vw;
-    height: 3vw;
+    
+    
     width: 80vw;
     display: flex;
     justify-content: center;
     color: rgb(185, 185, 185);
     border-bottom: 1px solid #ccc;
+}
+
+.AboutMeTitleLarge {
+    font-size: 1.6vw;
+    height: 3vw;
+}
+
+.AboutMeTitleMedium {
+    font-size: 3vw;
+    height: 5vw;
+}
+
+.AboutMeTitleSmall {
+    font-size: 4vw;
+    height: 7vw;
+}
+
+.AboutMeTitleExtraSmall {
+    font-size: 5vw;
+    height: 8vw;
 }

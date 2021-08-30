@@ -1,6 +1,23 @@
 .AboutSideBar {
+    
+}
+
+.AboutSideBarLarge {
     display: grid;
     grid-template-columns: 10fr 1fr;
+}
+
+.AboutSideBarMedium {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+}
+
+.AboutSideBarSmall {
+    display: flex;
+}
+
+.AboutSideBarExtraSmall {
+    display: flex;
 }
 
 .Portrait {
@@ -8,6 +25,24 @@
     margin: 0 auto;
     margin-top: 40px;
     border-radius: 100%;
+}
+
+.PortraitLarge {
+
+}
+
+.PortraitMedium {
+
+}
+
+.PortraitSmall {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.PortraitExtraSmall {
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .SideBarBorder {

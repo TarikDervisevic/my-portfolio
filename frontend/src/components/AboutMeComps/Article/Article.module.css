@@ -2,5 +2,25 @@
     background-color: white;
     margin-top: 40px;
     box-shadow: 0px 0px 3px rgb(231, 231, 231);
+    
+}
+
+.ArticleLarge {
+    margin-right: 0px;
     padding: 40px;
+}
+
+.ArticleMedium {
+    margin-right: 20px;
+    padding: 40px;
+}
+
+.ArticleSmall {
+    margin: 40px 20px 0px 20px;
+    padding: 20px;
+}
+
+.ArticleExtraSmall {
+    margin: 40px 20px 0px 20px;
+    padding: 15px;
 }

@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom"
 import classes from "./App.module.css";
 
 import ScreenSizeProvider from "./components/ScreenSizeProvider/ScreenSizeProvider";
+import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Toolbar from "./components/Toolbar/Toolbar";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutMe from "./pages/AboutMe/AboutMe";
@@ -13,6 +14,7 @@ function App() {
   return (
     <React.Fragment>
       <ScreenSizeProvider/>
+      <SideDrawer/>
       <main className={classes.Content}>
         <Switch>
           <Route path="/about">

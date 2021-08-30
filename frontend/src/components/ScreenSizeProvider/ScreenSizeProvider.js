@@ -13,12 +13,17 @@ const ScreenSizeProvider = (props) => {
         })
     };
 
+    const mediumBreakpoint = 1150;
     const smallBreakpoint = 700;
     const extraSmallBreakpoint = 500;
 
     useEffect(() => {
-        setTimeout(() => {
-            if (window.innerWidth < smallBreakpoint && window.innerWidth > extraSmallBreakpoint) // setTimeout because window.innerWidth returns wrong value without it
+        setTimeout(() => {  // setTimeout because window.innerWidth returns wrong value without it
+            if (window.innerWidth < mediumBreakpoint && window.innerWidth > smallBreakpoint) 
+        {
+            updateScreenSize("medium")
+        }
+            if (window.innerWidth < smallBreakpoint && window.innerWidth > extraSmallBreakpoint) 
         {
             updateScreenSize("small")
         } else if (window.innerWidth < extraSmallBreakpoint) {
@@ -31,7 +36,9 @@ const ScreenSizeProvider = (props) => {
             updateScreenSize("small")
         } else if (window.innerWidth < extraSmallBreakpoint) {
             updateScreenSize("extraSmall")
-        } else if (window.innerWidth > smallBreakpoint) {
+        } else if (window.innerWidth > smallBreakpoint && window.innerWidth < mediumBreakpoint) {
+            updateScreenSize("medium")
+        } else if (window.innerWidth > mediumBreakpoint) {
             updateScreenSize("large")
         }
         });
@@ -41,7 +48,9 @@ const ScreenSizeProvider = (props) => {
             updateScreenSize("small")
         } else if (window.innerWidth < extraSmallBreakpoint) {
             updateScreenSize("extraSmall")
-        } else if (window.innerWidth > smallBreakpoint) {
+        } else if (window.innerWidth > smallBreakpoint && window.innerWidth < mediumBreakpoint) {
+            updateScreenSize("medium")
+        } else if (window.innerWidth > mediumBreakpoint) {
             updateScreenSize("large")
         }
         });

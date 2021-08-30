@@ -20,5 +20,6 @@
 }
 
 .ToolbarExtraSmall {
-    height: 40px;
+    padding-top: 5px;
+    height: 50px;
 }

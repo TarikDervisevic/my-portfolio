@@ -10,10 +10,12 @@ const Toolbar = (props) => {
 
     return (
             <header className={
-                `${classes.Toolbar} ${screenSize === "large" ? 
-                classes.ToolbarLarge : screenSize === "small" ? 
-                classes.ToolbarSmall : classes.ToolbarExtraSmall}`}>
-                {screenSize !== "extraSmall" ? <ToolbarBtns btnColor={props.btnColor}/> : <DrawerToggle/>}
+                `${classes.Toolbar} ${screenSize === "large" ? classes.ToolbarLarge : 
+                screenSize === "medium" ? classes.ToolbarLarge : 
+                screenSize === "small" ? classes.ToolbarSmall : 
+                screenSize === "extraSmall" ? classes.ToolbarExtraSmall 
+                : null}`}>
+                {screenSize !== "extraSmall" ? <ToolbarBtns btnColor={props.btnColor}/> : <DrawerToggle isHomePage={props.btnColor === "white"}/>}
             </header>
     )
 }

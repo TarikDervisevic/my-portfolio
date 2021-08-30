@@ -10,7 +10,7 @@ const ToolbarBtn = (props) => {
     const screenSize = useSelector(state => state.screenSize);
 
     const setBtnClasses = () => {
-        let classString = `${classes.ToolbarBtn} ${screenSize === "large" ? 
+        let classString = `${classes.ToolbarBtn} ${screenSize === "large" || screenSize === "medium" ? 
         classes.ToolbarBtnLarge : screenSize === "small" ? 
         classes.ToolbarBtnSmall : classes.ToolbarBtnExtraSmall}`;
 
