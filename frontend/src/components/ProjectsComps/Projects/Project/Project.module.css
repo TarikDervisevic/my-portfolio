@@ -1,20 +1,67 @@
 .Project {
-    height: 20vw;
     margin: 0 auto;
-    width: 70%;
     border-bottom: 1px solid #ccc;
+}
+
+.ProjectLarge {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-height: 20vw;
+    width: 70%;
 }
+
+.ProjectMedium {
+    display: grid;
+    grid-template-rows: auto;
+    min-height: 20vw;
+    width: 80%;
+}
+
+.ProjectSmall {
+    display: grid;
+    grid-template-rows: auto;
+    min-height: 20vw;
+    width: 85%;
+}
+
+.ProjectExtraSmall {
+    display: grid;
+    grid-template-rows: auto;
+    min-height: 20vw;
+    width: 90%;
+}
+
+
 
 .ProjectImgContainer {
     grid-column: 1;
     max-width: 80%;
-    height: 18vw;
-    margin: auto auto;
+    
     display: flex;
     align-items: center;
 }
+
+.ProjectImgContainerLarge {
+    margin: auto auto;
+    height: 18vw;
+}
+
+.ProjectImgContainerMedium {
+    margin: 30px auto;
+    height: 22vw;
+}
+
+.ProjectImgContainerSmall {
+    margin: 30px auto;
+    height: 30vw;
+}
+
+.ProjectImgContainerExtraSmall {
+    margin: 20px auto;
+    height: 38vw;
+}
+
+
 
 .ProjectImg {
     max-width: 100%;
@@ -22,23 +69,70 @@
     box-shadow: 5px 5px 10px #ccc;
 }
 
+
+
 .ProjectDesc {
     margin: auto 0;
+    
+}
+
+.ProjectDescLarge {
     margin-left: 60px;
 }
 
+.ProjectDescMedium {
+    margin: auto auto;
+    text-align: center;
+}
+
+.ProjectDescSmall {
+    margin: auto auto;
+    text-align: center;
+}
+
+.ProjectDescExtraSmall {
+    margin: auto auto;
+    text-align: center;
+}
+
+
+
 .ProjectTitle {
-    font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: .5px;
+}
+
+.ProjectTitleLarge {
+    font-size: 1.6rem;
     margin-bottom: 20px;
 }
+
+.ProjectTitleMedium {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ProjectTitleSmall {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ProjectTitleExtraSmall {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+
 
 .ProjectDescText {
     color: rgb(151, 151, 151);
     font-weight: 300;
     margin-bottom: 20px;
 }
+
+
 
 .VisitSiteButton {
     border: none;
@@ -58,4 +152,20 @@
 
 .VisitSiteButton:hover {
     background-color: rgb(216, 41, 64)
+}
+
+.VisitSiteButtonLarge {
+    margin-bottom: 0px;
+}
+
+.VisitSiteButtonMedium {
+    margin-bottom: 30px;
+}
+
+.VisitSiteButtonSmall {
+    margin-bottom: 30px;
+}
+
+.VisitSiteButtonExtraSmall {
+    margin-bottom: 20px;
 }

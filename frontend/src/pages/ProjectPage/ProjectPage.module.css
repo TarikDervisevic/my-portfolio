@@ -9,11 +9,31 @@
 .ProjectsTitle {
     margin: 0 auto;
     margin-top: 40px;
-    font-size: 1.6vw;
-    height: 3vw;
+    
+    
     width: 80vw;
     display: flex;
     justify-content: center;
     color: rgb(185, 185, 185);
     border-bottom: 1px solid #ccc;
+}
+
+.ProjectsTitleLarge {
+    font-size: 1.6vw;
+    min-height: 3vw;
+}
+
+.ProjectsTitleMedium {
+    font-size: 2.5vw;
+    min-height: 4vw;
+}
+
+.ProjectsTitleSmall {
+    font-size: 3.5vw;
+    min-height: 5vw;
+}
+
+.ProjectsTitleExtraSmall {
+    font-size: 5.5vw;
+    min-height: 8vw;
 }
