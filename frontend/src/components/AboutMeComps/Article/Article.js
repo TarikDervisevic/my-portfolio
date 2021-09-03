@@ -6,6 +6,10 @@ import classes from "./Article.module.css"
 const Article = (props) => {
     const screenSize = useSelector(state => state.screenSize);
 
+    const openNewTab = (url) => {
+        window.open(url,'_blank');
+    }
+
     return (
                 <div className={
                     `${classes.Article} ${screenSize === "large" ? classes.ArticleLarge :
@@ -25,28 +29,30 @@ const Article = (props) => {
                         <div><span className={classes.Bold}>Version Control System -</span> Git</div>
 
                     <h2 className={classes.Title}>Projects</h2>
-                        <div className={classes.Bold}>PixelStore</div>
-                        <div>An online store made with React and Node/Express</div>
-                        <a>www.pixelstorelink.com</a>
-                        <div className={classes.Bold}>SquareClicker</div>
-                        <div>A simple game made with React</div>
-                        <a>www.squareclickerlink.com</a>
-
+                        <div className={classes.ProjectTitle}>PixelStore</div>
+                        <div className={classes.ProjectDesc}>An online store made with React and Node/Express</div>
+                        <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://salty-eyrie-09068.herokuapp.com/")}}>Visit Site</button>
+                        <div className={classes.ProjectTitle}>SquareClicker</div>
+                        <div className={classes.ProjectDesc}>A simple game made with React</div>
+                        <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://squareclicker.web.app/")}}>Visit Site</button>
                     <h2 className={classes.Title}>Education</h2>
                         <div><span>Medical nurse</span> | <span>"Medicinska škola Bihać"</span></div>
                         <div>2016 - 2021</div>
 
                     <h2 className={classes.Title}>Languages</h2>
-                        <div>
-                            <div className={classes.Bold}>Bosnian/Croatian/Serbian</div>
+                    <div className={classes.Languages}>
+                        <div className={classes.LanguageName}>
+                            <div className={classes.Bold}>Bosnian</div>
                             <div className={classes.Bold}>English</div>
                             <div className={classes.Bold}>German</div>
                         </div>
-                        <div>
+                        <div className={classes.LanguageFluency}>
                             <div>Native</div>
                             <div>Fluent</div>
                             <div>Good</div>
                         </div>
+                    </div>
+                        
                         
                 </div>
     )

@@ -25,6 +25,51 @@
     padding: 15px;
 }
 
+.ProjectTitle {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.ProjectDesc {
+    margin-bottom: 13px;
+}
+
+.VisitSiteBtn {
+    margin-bottom: 20px;
+    border: none;
+    height: 30px;
+    width: 90px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 15px;
+    
+    background-color: rgb(236, 46, 71);
+    color: white;
+
+    -moz-transition: background-color .15s ease-in;
+    -o-transition: background-color .15s ease-in;
+    -webkit-transition: background-color .15s ease-in;
+    transition: background-color .15s ease-in;
+}
+
+.VisitSiteBtn:hover {
+    background-color: rgb(216, 41, 64)
+}
+
 .Bold {
     font-weight: 700;
 }
+
+.Languages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.LanguageName {
+    grid-column: 1;
+}
+
+.LanguageFluency {
+    grid-column: 2;
+}
+
