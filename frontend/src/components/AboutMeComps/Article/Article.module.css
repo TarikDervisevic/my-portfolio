@@ -56,6 +56,11 @@
     background-color: rgb(216, 41, 64)
 }
 
+.SchoolYears {
+    margin-top: 5px;
+    color: rgb(146, 146, 146);
+}
+
 .Bold {
     font-weight: 700;
 }

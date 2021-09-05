@@ -37,7 +37,7 @@ const Article = (props) => {
                         <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://squareclicker.web.app/")}}>Visit Site</button>
                     <h2 className={classes.Title}>Education</h2>
                         <div><span>Medical nurse</span> | <span>"Medicinska škola Bihać"</span></div>
-                        <div>2016 - 2021</div>
+                        <div className={classes.SchoolYears}>2016. - 2021.</div>
 
                     <h2 className={classes.Title}>Languages</h2>
                     <div className={classes.Languages}>
