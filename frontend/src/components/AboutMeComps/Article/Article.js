@@ -19,6 +19,23 @@ const Article = (props) => {
                     null}`
                 }>
 
+                    <div className={
+                        `${classes.Header} ${screenSize === "large" ? classes.HeaderLarge :
+                        screenSize === "medium" ? classes.HeaderSmall : 
+                        screenSize === "small" ? classes.HeaderSmall : 
+                        screenSize === "extraSmall" ? classes.HeaderSmall : 
+                        null}`
+                    }>
+                        <h2 className={classes.MyName}>Tarik Dervišević</h2>
+                        <div className={`${screenSize === "medium" || screenSize === "small" || screenSize === "extraSmall" ? classes.Info : null}`}>
+                            <div><span className={classes.InfoName}>address:</span> Midžića mahala 44</div>
+                            <div><span className={classes.InfoName}>telephone:</span> +38761590136</div>
+                            <div><span className={classes.InfoName}>LinkedIn:</span> at.idonthavelinkedin.com/in/tarik</div>
+                            <div><span className={classes.InfoName}>e-mail:</span> tarikov.mail@gmail.com</div>
+                        </div>
+                    </div>
+                    
+
                     <h2 className={classes.Title}>Profile</h2>
                         <div>An enthusiastic young full-stack web developer with a passion for code. Quick to pick up new languages/technologies and enjoys developing efficient solutions to challenging problems.</div>
 

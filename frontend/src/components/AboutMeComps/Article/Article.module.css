@@ -25,6 +25,37 @@
     padding: 15px;
 }
 
+.Header {
+    margin-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.HeaderLarge {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+}
+
+.HeaderSmall {
+    height: 150px;
+}
+
+.MyName {
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+.Info {
+    margin-top: 20px;
+}
+
+.InfoName {
+    font-weight: 700;
+    color: rgb(116, 116, 116);
+}
+
 .ProjectTitle {
     font-weight: 700;
     margin-bottom: 10px;
