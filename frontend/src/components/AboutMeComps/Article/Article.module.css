@@ -2,7 +2,7 @@
     background-color: white;
     margin-top: 40px;
     box-shadow: 0px 0px 3px rgb(231, 231, 231);
-    
+    margin-bottom: 40px;
 }
 
 .ArticleLarge {
@@ -34,12 +34,16 @@
 
 .HeaderLarge {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 4fr;
     height: 100px;
 }
 
 .HeaderSmall {
     height: 150px;
+}
+
+.HeaderExtraSmall {
+    padding-bottom: 20px;
 }
 
 .MyName {

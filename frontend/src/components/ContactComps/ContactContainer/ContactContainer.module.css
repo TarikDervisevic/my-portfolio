@@ -1,27 +1,56 @@
 .ContactContainer {
     height: 35vh;
     padding-top: 2vw;
-    width: 50%;
+    
     margin: 0 auto;
     margin-top: 1vw;
     background-color: white;
     box-shadow: 0px 0px 3px rgb(231, 231, 231);
 }
 
-.ContactTitle {
-    margin-left: 2.4vw;
-    text-align: center;
-    font-size: 2.6vw;
-    width: 10vw;
-    border-bottom: 3px solid red;
-    font-weight: 500;
-    height: 3.4vw;
+.ContactContainerLarge {
+    width: 50%;
 }
 
+.ContactContainerMedium {
+    width: 70%;
+}
+
+.ContactContainerSmall {
+    width: 80%;
+}
+
+.ContactContainerExtraSmall {
+    width: 90%;
+}
+
+
 .Email {
+    
+}
+
+.EmailLarge {
     margin-top: 2vw;
     margin-left: 2.4vw;
     font-size: 1.7vw;
+}
+
+.EmailMedium {
+    margin-top: 2vw;
+    margin-left: 3vw;
+    font-size: 3vw;
+}
+
+.EmailSmall {
+    margin-top: 2vw;
+    margin-left: 3vw;
+    font-size: 4.5vw;
+}
+
+.EmailExtraSmall {
+    margin-top: 2vw;
+    margin-left: 5vw;
+    font-size: 5.5vw;
 }
 
 .LinkedInIcon {
@@ -41,7 +70,7 @@
 
 .LinkedIn {
     display: flex;
-    margin-top: 1vw;
+    margin-top: 2vw;
     margin-left: 2.4vw;
     cursor: pointer;
     max-width: 7.1vw;

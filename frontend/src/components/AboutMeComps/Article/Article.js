@@ -23,15 +23,15 @@ const Article = (props) => {
                         `${classes.Header} ${screenSize === "large" ? classes.HeaderLarge :
                         screenSize === "medium" ? classes.HeaderSmall : 
                         screenSize === "small" ? classes.HeaderSmall : 
-                        screenSize === "extraSmall" ? classes.HeaderSmall : 
+                        screenSize === "extraSmall" ? classes.HeaderExtraSmall : 
                         null}`
                     }>
                         <h2 className={classes.MyName}>Tarik Dervišević</h2>
                         <div className={`${screenSize === "medium" || screenSize === "small" || screenSize === "extraSmall" ? classes.Info : null}`}>
-                            <div><span className={classes.InfoName}>address:</span> Midžića mahala 44</div>
+                            <div><span className={classes.InfoName}>address:</span> Bosnia and Herzegovina, Bihać, Midžića mahala 44</div>
                             <div><span className={classes.InfoName}>telephone:</span> +38761590136</div>
                             <div><span className={classes.InfoName}>LinkedIn:</span> at.idonthavelinkedin.com/in/tarik</div>
-                            <div><span className={classes.InfoName}>e-mail:</span> tarikov.mail@gmail.com</div>
+                            <div><span className={classes.InfoName}>e-mail:</span> rikdervisevic@gmail.com</div>
                         </div>
                     </div>
                     
@@ -48,7 +48,7 @@ const Article = (props) => {
                     <h2 className={classes.Title}>Projects</h2>
                         <div className={classes.ProjectTitle}>PixelStore</div>
                         <div className={classes.ProjectDesc}>An online store made with React and Node/Express</div>
-                        <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://salty-eyrie-09068.herokuapp.com/")}}>Visit Site</button>
+                        <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://pixelstore-loads-slowly.herokuapp.com/")}}>Visit Site</button>
                         <div className={classes.ProjectTitle}>SquareClicker</div>
                         <div className={classes.ProjectDesc}>A simple game made with React</div>
                         <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://squareclicker.web.app/")}}>Visit Site</button>

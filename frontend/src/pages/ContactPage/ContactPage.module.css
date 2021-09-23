@@ -8,12 +8,30 @@
 
 .ContactTitle {
     margin: 0 auto;
-    margin-top: 40px;
-    font-size: 1.6vw;
-    height: 3vw;
+    padding-top: 40px;
     width: 80vw;
     display: flex;
     justify-content: center;
     color: rgb(185, 185, 185);
     border-bottom: 1px solid #ccc;
+}
+
+.ContactTitleLarge {
+    font-size: 1.6vw;
+    height: 3vw;
+}
+
+.ContactTitleMedium {
+    font-size: 3vw;
+    height: 5vw;
+}
+
+.ContactTitleSmall {
+    font-size: 4vw;
+    height: 7vw;
+}
+
+.ContactTitleExtraSmall {
+    font-size: 5vw;
+    height: 8vw;
 }
