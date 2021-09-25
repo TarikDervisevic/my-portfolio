@@ -47,7 +47,7 @@ const Article = (props) => {
 
                     <h2 className={classes.Title}>Projects</h2>
                         <div className={classes.ProjectTitle}>PixelStore</div>
-                        <div className={classes.ProjectDesc}>An online store made with React and Node/Express</div>
+                        <div className={classes.ProjectDesc}>A responsive online store made with React and Node/Express</div>
                         <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://pixelstore-loads-slowly.herokuapp.com/")}}>Visit Site</button>
                         <div className={classes.ProjectTitle}>SquareClicker</div>
                         <div className={classes.ProjectDesc}>A simple game made with React</div>
