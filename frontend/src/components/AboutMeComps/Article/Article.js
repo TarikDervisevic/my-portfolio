@@ -30,7 +30,7 @@ const Article = (props) => {
                         <div className={`${screenSize === "medium" || screenSize === "small" || screenSize === "extraSmall" ? classes.Info : null}`}>
                             <div><span className={classes.InfoName}>address:</span> Bosnia and Herzegovina, Bihać, Midžića mahala 44</div>
                             <div><span className={classes.InfoName}>telephone:</span> +38761590136</div>
-                            <div><span className={classes.InfoName}>LinkedIn:</span> at.idonthavelinkedin.com/in/tarik</div>
+                            <div><span className={classes.InfoName}>LinkedIn:</span> www.linkedin.com/in/tarikdev</div>
                             <div><span className={classes.InfoName}>e-mail:</span> rikdervisevic@gmail.com</div>
                         </div>
                     </div>

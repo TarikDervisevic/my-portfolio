@@ -12,10 +12,12 @@ const ContactContainer = (props) => {
                     <div className={setResponsiveClassName(classes, screenSize, "ContactContainer")}>
                         <div className={setResponsiveClassName(classes, screenSize, "Email")}>Email: rikdervisevic@gmail.com</div>
                         <div className={setResponsiveClassName(classes, screenSize, "Email")}>Telephone: +38761590136</div>
-                        <div className={setResponsiveClassName(classes, screenSize, "LinkedIn")}>
-                            <div className={setResponsiveClassName(classes, screenSize, "LinkedInText")}>Linked</div>
-                            <img className={setResponsiveClassName(classes, screenSize, "LinkedInIcon")} src={LinkedInIcon}/>  
-                        </div>
+                        <a href="https://www.linkedin.com/in/tarikdev/">
+                            <div className={setResponsiveClassName(classes, screenSize, "LinkedIn")}>
+                                <div className={setResponsiveClassName(classes, screenSize, "LinkedInText")}>Linked</div>
+                                <img className={setResponsiveClassName(classes, screenSize, "LinkedInIcon")} src={LinkedInIcon}/>  
+                            </div>
+                        </a>
                     </div>
     )
 }
