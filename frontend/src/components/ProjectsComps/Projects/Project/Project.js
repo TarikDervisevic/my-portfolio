@@ -25,7 +25,7 @@ const Project = (props) => {
                         screenSize === "extraSmall" ? classes.ProjectImgContainerExtraSmall : 
                         null}`
                     }>
-                        <img className={classes.ProjectImg} src={props.imgURL}/>
+                        <img className={classes.ProjectImg} src={props.imgURL} onClick={() => openNewTab(props.link)}/>
                     </div>
                     <div className={
                         `${classes.ProjectDesc} ${screenSize === "large" ? classes.ProjectDescLarge :
