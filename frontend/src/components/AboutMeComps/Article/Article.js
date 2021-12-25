@@ -31,7 +31,7 @@ const Article = (props) => {
                     <div><span className={classes.InfoName}>address:</span> Bosnia and Herzegovina, Bihać, Midžića mahala 44</div>
                     <div><span className={classes.InfoName}>telephone:</span> +38761590136</div>
                     <div><span className={classes.InfoName}>LinkedIn:</span> linkedin.com/in/tarikdev</div>
-                    <div><span className={classes.InfoName}>LinkedIn:</span> github.com/TarikDervisevic</div>
+                    <div><span className={classes.InfoName}>GitHub:</span> github.com/TarikDervisevic</div>
                     <div><span className={classes.InfoName}>e-mail:</span> rikdervisevic@gmail.com</div>
                 </div>
             </div>
