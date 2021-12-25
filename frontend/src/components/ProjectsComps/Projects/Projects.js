@@ -13,7 +13,7 @@ const Projects = (props) => {
         },
         { 
             name: "Armor Sim", 
-            desc: "A tank shell penetration calculator with 2D graphics", 
+            desc: "A tank shell penetration calculator with 2D WebGL graphics", 
             link: "https://armor-sim.web.app/", 
             imgURL: "https://i.imgur.com/YduCVan.png"
         },

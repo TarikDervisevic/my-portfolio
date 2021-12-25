@@ -30,7 +30,8 @@ const Article = (props) => {
                 <div className={`${screenSize === "medium" || screenSize === "small" || screenSize === "extraSmall" ? classes.Info : null}`}>
                     <div><span className={classes.InfoName}>address:</span> Bosnia and Herzegovina, Bihać, Midžića mahala 44</div>
                     <div><span className={classes.InfoName}>telephone:</span> +38761590136</div>
-                    <div><span className={classes.InfoName}>LinkedIn:</span> www.linkedin.com/in/tarikdev</div>
+                    <div><span className={classes.InfoName}>LinkedIn:</span> linkedin.com/in/tarikdev</div>
+                    <div><span className={classes.InfoName}>LinkedIn:</span> github.com/TarikDervisevic</div>
                     <div><span className={classes.InfoName}>e-mail:</span> rikdervisevic@gmail.com</div>
                 </div>
             </div>
@@ -42,17 +43,17 @@ const Article = (props) => {
             <h2 className={classes.Title}>Programming skills</h2>
                 <div><span className={classes.Bold}>Frontend -</span> HTML/CSS, Bootstrap, React, Pixi.js, jQuery</div>
                 <div><span className={classes.Bold}>Backend -</span> Node.js/Express.js</div>
-                <div><span className={classes.Bold}>Databases -</span> MongoDB</div>
+                <div><span className={classes.Bold}>Databases -</span> MongoDB, MySQL</div>
                 <div><span className={classes.Bold}>Version Control System -</span> Git</div>
 
             <h2 className={classes.Title}>Projects</h2>
 
                 <div className={classes.ProjectTitle}>PixelStore</div>
-                <div className={classes.ProjectDesc}>A responsive online store made with React and Node/Express</div>
+                <div className={classes.ProjectDesc}>A responsive online store made with React and Node/Express (loads slowly due to free hosting)</div>
                 <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://pixelstore-loads-slowly.herokuapp.com/")}}>Visit Site</button>
 
                 <div className={classes.ProjectTitle}>Armor Sim</div>
-                <div className={classes.ProjectDesc}>A tank shell penetration calculator with 2D graphics</div>
+                <div className={classes.ProjectDesc}>A tank shell penetration calculator with 2D WebGL graphics</div>
                 <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://armor-sim.web.app/")}}>Visit Site</button>
 
                 <div className={classes.ProjectTitle}>SquareClicker</div>
