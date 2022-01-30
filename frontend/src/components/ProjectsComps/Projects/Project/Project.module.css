@@ -6,7 +6,7 @@
 .ProjectLarge {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 20vw;
+    min-height: 23vw;
     width: 70%;
 }
 
@@ -83,7 +83,10 @@
 
 .ProjectDescMedium {
     margin: auto auto;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .ProjectDescSmall {
@@ -130,7 +133,7 @@
 .ProjectDescText {
     color: rgb(151, 151, 151);
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 
 
@@ -144,6 +147,7 @@
     font-size: 0.9rem;
     border-radius: 25px;
     cursor: pointer;
+    margin-top: 14px;
 
     -moz-transition: background-color .15s ease-in;
     -o-transition: background-color .15s ease-in;

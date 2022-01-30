@@ -41,7 +41,8 @@ const Project = (props) => {
                             screenSize === "extraSmall" ? classes.ProjectTitleExtraSmall : 
                             null}`
                         }>{props.name}</div>
-                        <div className={classes.ProjectDescText}>{props.desc}</div>
+                        {props.desc.map((descLine, i) => <div className={classes.ProjectDescText} key={i}>{descLine}</div>)}
+                        {/*<div className={classes.ProjectDescText}>{props.desc}</div>*/}
                             <button 
                                 className={
                                     `${classes.VisitSiteButton} ${screenSize === "large" ? classes.VisitSiteButtonLarge :

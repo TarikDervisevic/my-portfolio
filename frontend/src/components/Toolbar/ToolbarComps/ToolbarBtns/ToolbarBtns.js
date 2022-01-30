@@ -18,8 +18,8 @@ const ToolbarBtns = (props) => {
                 `${screenSize === "large" || screenSize === "medium" ? 
                 classes.ToolbarBtnsLarge : screenSize === "small" ? 
                 classes.ToolbarBtnsSmall : classes.ToolbarBtnsExtraSmall}`}>
-                {toolbarButtons.map(button => {
-                    return <ToolbarBtn name={button.name} linkTo={button.linkTo} btnColor={props.btnColor}/>
+                {toolbarButtons.map((button, i) => {
+                    return <ToolbarBtn name={button.name} linkTo={button.linkTo} btnColor={props.btnColor} key={i}/>
                 })}
             </div>
     )

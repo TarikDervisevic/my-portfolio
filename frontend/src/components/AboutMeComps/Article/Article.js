@@ -49,16 +49,16 @@ const Article = (props) => {
             <h2 className={classes.Title}>Projects</h2>
 
                 <div className={classes.ProjectTitle}>PixelStore</div>
-                <div className={classes.ProjectDesc}>A responsive online store made with React and Node/Express (loads slowly due to free hosting)</div>
+                <div className={classes.ProjectDesc}>A responsive online store made with React and Node/Express (slow initial load due to free hosting)</div>
                 <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://pixelstore-loads-slowly.herokuapp.com/")}}>Visit Site</button>
 
                 <div className={classes.ProjectTitle}>Armor Sim</div>
                 <div className={classes.ProjectDesc}>A tank shell penetration calculator with 2D WebGL graphics</div>
                 <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://armor-sim.web.app/")}}>Visit Site</button>
 
-                <div className={classes.ProjectTitle}>SquareClicker</div>
-                <div className={classes.ProjectDesc}>A simple game made with React</div>
-                <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://squareclicker.web.app/")}}>Visit Site</button>
+                <div className={classes.ProjectTitle}>4chat</div>
+                <div className={classes.ProjectDesc}>An anonymous instant message board</div>
+                <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://four-chat.herokuapp.com/")}}>Visit Site</button>
 
                 <h2 className={classes.Title}>Education</h2>
                 <div><span>Electrical Engineering</span> | <span>"Univerzitet u Bihaću"</span></div>
