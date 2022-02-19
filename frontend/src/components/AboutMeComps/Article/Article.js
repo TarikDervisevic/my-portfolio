@@ -58,7 +58,7 @@ const Article = (props) => {
 
                 <div className={classes.ProjectTitle}>4chat</div>
                 <div className={classes.ProjectDesc}>An anonymous instant message board</div>
-                <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://four-chat.herokuapp.com/")}}>Visit Site</button>
+                <button className={classes.VisitSiteBtn} onClick={() => {openNewTab("https://four-chat-socket.herokuapp.com/")}}>Visit Site</button>
 
                 <h2 className={classes.Title}>Education</h2>
                 <div><span>Electrical Engineering</span> | <span>"Univerzitet u Bihaću"</span></div>

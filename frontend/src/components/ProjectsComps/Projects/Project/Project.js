@@ -43,6 +43,8 @@ const Project = (props) => {
                         }>{props.name}</div>
                         {props.desc.map((descLine, i) => <div className={classes.ProjectDescText} key={i}>{descLine}</div>)}
                         {/*<div className={classes.ProjectDescText}>{props.desc}</div>*/}
+                        
+                        { props.link ?
                             <button 
                                 className={
                                     `${classes.VisitSiteButton} ${screenSize === "large" ? classes.VisitSiteButtonLarge :
@@ -53,7 +55,35 @@ const Project = (props) => {
                                 }
                                 onClick={() => openNewTab(props.link)}>
                                     Visit Site
+                            </button> 
+                            : 
+                            <React.Fragment>
+                                <button 
+                                    className={
+                                        `${classes.VisitSiteButton} ${screenSize === "large" ? classes.VisitSiteButtonLarge :
+                                        screenSize === "medium" ? classes.VisitSiteButtonMedium : 
+                                        screenSize === "small" ? classes.VisitSiteButtonSmall : 
+                                        screenSize === "extraSmall" ? classes.VisitSiteButtonExtraSmall : 
+                                        null}`
+                                    }
+                                    onClick={() => openNewTab(props.link1)}>
+                                        <span>Visit {props.name1}</span>
                                 </button>
+                                <button 
+                                    className={
+                                        `${classes.VisitSiteButton} ${classes.VisitSiteButtonAltChoice} ${screenSize === "large" ? classes.VisitSiteButtonLarge :
+                                        screenSize === "medium" ? classes.VisitSiteButtonMedium : 
+                                        screenSize === "small" ? classes.VisitSiteButtonSmall : 
+                                        screenSize === "extraSmall" ? classes.VisitSiteButtonExtraSmall : 
+                                        null}`
+                                    }
+                                    onClick={() => openNewTab(props.link2)}>
+                                        Visit {props.name2}
+                                </button>
+                            </React.Fragment>
+                        }
+                            
+
                     </div>
                 </div>
     )

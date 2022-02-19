@@ -19,8 +19,11 @@ const Projects = (props) => {
         },
         { 
             name: "4chat", 
-            desc: ["An instant messageboard with dynamic message loading", "Uses HTTP requests, websocket version coming soon", "Initial load takes 5-10 seconds due to free heroku hosting"], 
-            link: "https://four-chat.herokuapp.com/", 
+            name1: "Websocket Version",
+            name2: "HTTP Version",
+            desc: ["An instant messageboard with dynamic message loading", "One version uses websockets, while the other uses timed HTTP requests", "Initial load takes 5-10 seconds due to free heroku hosting"], 
+            link1: "https://four-chat-socket.herokuapp.com/", 
+            link2: "https://four-chat.herokuapp.com/",
             imgURL: "https://i.imgur.com/XfXKAnV.png"
         },
         { 
@@ -33,7 +36,32 @@ const Projects = (props) => {
 
     return (
                 <div className={classes.Projects}>
-                    {projectList.map((project, i) => <Project name={project.name} desc={project.desc} link={project.link} imgURL={project.imgURL} key={i}/>)}
+                    {projectList.map((project, i) => {
+                        if (project.link) {
+                            return (
+                            <Project 
+                                name={project.name} 
+                                desc={project.desc} 
+                                link={project.link} 
+                                imgURL={project.imgURL} 
+                                key={i}/>
+                            )
+                        } else if (project.link1) {
+                            return (
+                                <Project 
+                                    name={project.name} 
+                                    desc={project.desc} 
+                                    link1={project.link1} 
+                                    link2={project.link2} 
+                                    name1={project.name1} 
+                                    name2={project.name2} 
+                                    imgURL={project.imgURL} 
+                                    key={i}/>
+                            )
+                        }
+                        
+                    }
+                    )}
                 </div>
     )
 }

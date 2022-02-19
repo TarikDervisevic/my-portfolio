@@ -142,12 +142,14 @@
     border: none;
     background-color: rgb(236, 46, 71);
     height: 35px;
-    width: 100px;
+    min-width: 100px;
     color: white;
     font-size: 0.9rem;
     border-radius: 25px;
     cursor: pointer;
     margin-top: 14px;
+    margin-right: 0.6rem;
+    padding: 0 0.9rem;
 
     -moz-transition: background-color .15s ease-in;
     -o-transition: background-color .15s ease-in;
@@ -156,7 +158,15 @@
 }
 
 .VisitSiteButton:hover {
-    background-color: rgb(216, 41, 64)
+    background-color: rgb(216, 41, 64);
+}
+
+.VisitSiteButtonAltChoice {
+    background-color: rgb(125, 125, 255) !important;
+}
+
+.VisitSiteButtonAltChoice:hover {
+    background-color: rgb(107, 107, 221) !important;
 }
 
 .VisitSiteButtonLarge {
